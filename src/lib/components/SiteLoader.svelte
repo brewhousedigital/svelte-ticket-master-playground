@@ -29,10 +29,13 @@
             totalStats = JSON.parse(totalStats);
 
             ticketsAcquired = totalStats.filter(item => item.success).length ?? 0;
-            totalGames = totalStats.length
-            fastestTime = totalStats.sort(function(a, b) {
-                return (a.totalTime - b.totalTime);
-            })?.[0]?.totalTime ?? 0;
+            totalGames = totalStats.length;
+
+            let filteredTimes = totalStats.filter(item => item.success);
+            let sortedTimes = filteredTimes.sort(function(a, b) {
+                return (a?.totalTime - b?.totalTime);
+            });
+            fastestTime = sortedTimes?.[0]?.totalTime ?? 0;
         }
     })
 
