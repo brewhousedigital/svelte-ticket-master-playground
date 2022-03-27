@@ -1,11 +1,11 @@
 <script>
-    import swal from "sweetalert";
+    //import swal from "sweetalert";
     import {getFutureDate} from "$lib/functions/getFutureDate.js";
     import {coinToss} from "$lib/functions/coinToss.js";
     import {randomNumberBetween} from "$lib/functions/randomNumberBetween.js";
     import {completeSimulation} from "$lib/functions/completeSimulation.js";
     import {onMount, onDestroy} from "svelte";
-    import {countdownTime, user} from "$lib/store.js";
+    import {user} from "$lib/store.js";
 
     import LayoutBuilder from "$lib/components/LayoutBuilder.svelte";
     import {page} from "$app/stores";

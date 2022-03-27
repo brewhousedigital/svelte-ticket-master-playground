@@ -1,8 +1,6 @@
 <script>
     import {breadcrumbs, linkHome} from "$lib/store.js";
     import {shuffleArray} from "$lib/functions/shuffleArray.js";
-    import {getFutureDate} from "$lib/functions/getFutureDate.js";
-    import {getRandomTavern} from "$lib/functions/generateRandomVenueName.js";
     import heroBanners from "$lib/data/hero-events.json";
 
     import EventList from "$lib/components/EventList.svelte";

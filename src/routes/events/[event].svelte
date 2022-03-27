@@ -8,7 +8,7 @@
     import {randomNumberBetween} from "$lib/functions/randomNumberBetween.js";
     import {chooseRandomFromArray} from "$lib/functions/chooseRandomFromArray.js";
 
-    import swal from 'sweetalert';
+    //import swal from 'sweetalert';
     import LayoutBuilder from "$lib/components/LayoutBuilder.svelte";
     import {onDestroy, onMount} from "svelte";
     import {coinToss} from "$lib/functions/coinToss.js";

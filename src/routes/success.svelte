@@ -1,8 +1,8 @@
 <script>
     import gifs from "$lib/data/bts-gifs.json";
-    import {gameHistory} from "$lib/store.js";
+    import {simulationTime} from "$lib/store.js";
     import {shuffleArray} from "$lib/functions/shuffleArray.js";
-    import swal from "sweetalert";
+    //import swal from "sweetalert";
     import LayoutBuilder from "$lib/components/LayoutBuilder.svelte";
 
     let newArray = [...gifs];
@@ -10,12 +10,13 @@
     newArray = shuffleArray(newArray);
     newArray = shuffleArray(newArray);
 
+    let totalTime = $simulationTime;
 
     let minutes
     let seconds
     $: {
-        minutes = String(Math.floor($gameHistory[$gameHistory.length - 1].totalTime / 60));
-        seconds = String($gameHistory[$gameHistory.length - 1].totalTime - minutes * 60);
+        minutes = String(Math.floor(totalTime / 60));
+        seconds = String(totalTime - minutes * 60);
     }
 
     let background1 = `background-image: url('${newArray[0]}')`;

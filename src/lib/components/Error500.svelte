@@ -9,7 +9,6 @@
     })
 
     function handleReload() {
-        siteError.set("")
         window.location = "/";
     }
 </script>

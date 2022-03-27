@@ -1,6 +1,6 @@
 <script>
     import Timer from "tiny-timer";
-    import {user, countdownTime} from "$lib/store.js";
+    import {user} from "$lib/store.js";
     export let headerType = "";
     export let title = "";
 

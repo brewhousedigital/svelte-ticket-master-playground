@@ -1,4 +1,4 @@
-import {simulationTime, gameHistory, hasUserStartedTheGame} from "$lib/store.js";
+import {simulationTime, hasUserStartedTheGame} from "$lib/store.js";
 import { get } from 'svelte/store';
 
 export const completeSimulation = (success) => {
@@ -9,11 +9,14 @@ export const completeSimulation = (success) => {
         date: new Date().getTime(),
     }
 
-    // Save their history
-    gameHistory.update(obj => [
-        ...obj,
-        gameObject,
-    ])
+    let currentHistory = localStorage.getItem("storage-gameHistory");
+
+    if(currentHistory !== null) {
+        currentHistory = JSON.parse(currentHistory);
+        currentHistory = [...currentHistory, gameObject];
+
+        localStorage.setItem("storage-gameHistory", JSON.stringify(currentHistory))
+    }
 
     // Reset the game
     hasUserStartedTheGame.set(false);
