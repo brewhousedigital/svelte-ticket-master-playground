@@ -22,4 +22,6 @@ export const completeSimulation = (success) => {
 
     // Reset the game
     hasUserStartedTheGame.set(false);
+
+    return false;
 }

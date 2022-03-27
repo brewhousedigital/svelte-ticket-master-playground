@@ -84,6 +84,7 @@
         let interval = setInterval(() => {
             if(!coinToss(0.8)) {
                 createFatalError()
+                clearInterval(interval);
                 return false;
             }
         }, 1000)

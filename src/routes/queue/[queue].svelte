@@ -27,6 +27,7 @@
             } else {
                 if(!coinToss(0.95)) {
                     createFatalError();
+                    clearInterval(identity);
                     return false;
                 }
                 width = width + incrementAmount;

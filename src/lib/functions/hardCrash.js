@@ -4,5 +4,6 @@ import {coinToss} from "$lib/functions/coinToss.js";
 
 export const createFatalError = () => {
     completeSimulation(false)
-    siteError.set("Ooof")
+    siteError.set("Ooof");
+    return false;
 }
