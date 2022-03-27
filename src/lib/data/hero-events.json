@@ -1,0 +1,37 @@
+[
+  {
+    "name": "Anime Tuesdays",
+    "image": "hero-intro-animetuesdays.jpg",
+    "url": "/the-void",
+    "description": "Get your pajamas ready for this weekly show series focusing on all things anime.",
+    "saleDate": 1
+  },
+  {
+    "name": "BLACKPINK",
+    "image": "hero-intro-blackpink.jpg",
+    "url": "/the-void",
+    "description": "Blackpink is a South Korean girl group formed by YG Entertainment, consisting of members Jisoo, Jennie, Rosé, and Lisa.",
+    "saleDate": 3
+  },
+  {
+    "name": "BTS",
+    "image": "hero-intro-bts.jpg",
+    "url": "/queue/bts",
+    "description": "BTS, also known as the Bangtan Boys, is a South Korean boy band that was formed in 2010 and debuted in 2013 under Big Hit Entertainment.",
+    "saleDate": 6
+  },
+  {
+    "name": "Live Coding",
+    "image": "hero-intro-mrsquid.jpg",
+    "url": "/the-void",
+    "description": "Watch Mr Squid start from scratch on a new coding project for the Arrchive 🏴‍☠️",
+    "saleDate": 10
+  },
+  {
+    "name": "TXT",
+    "image": "hero-intro-txt.jpg",
+    "url": "/the-void",
+    "description": "Tomorrow X Together, commonly known as TXT, is a five-member South Korean boy band formed by Big Hit Music.",
+    "saleDate": 14
+  }
+]
