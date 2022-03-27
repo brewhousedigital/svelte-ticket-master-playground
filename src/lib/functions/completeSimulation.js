@@ -16,6 +16,8 @@ export const completeSimulation = (success) => {
         currentHistory = [...currentHistory, gameObject];
 
         localStorage.setItem("storage-gameHistory", JSON.stringify(currentHistory))
+    } else {
+        localStorage.setItem("storage-gameHistory", JSON.stringify([gameObject]))
     }
 
     // Reset the game

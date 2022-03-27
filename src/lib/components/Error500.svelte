@@ -1,11 +1,12 @@
 <script>
-    import {siteError} from "$lib/store.js";
     import {onMount} from "svelte";
 
     onMount(() => {
         document.querySelector("header").style.display = "none";
         document.querySelector("main").style.display = "none";
         document.querySelector("footer").style.display = "none";
+
+
     })
 
     function handleReload() {
